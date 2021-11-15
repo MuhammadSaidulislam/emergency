@@ -1,0 +1,79 @@
+.police {
+  display: block;
+  width: 30%;
+  height: 30%;
+  margin-left: 60%;
+  margin-top: 100px;
+}
+
+.name {
+  margin-top: -490px;
+  margin-left: 23%;
+  font-size: 20px;
+}
+
+.get {
+  margin-left: 13%;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .police {
+    display: none;
+  }
+
+  .name {
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+
+  .get {
+    width: 100% !important;
+    margin-left: 0%;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .police {
+    display: none !important;
+  }
+  .name {
+    margin-top: 3%;
+    margin-left: 45%;
+  }
+  .get {
+    width: 90% !important;
+    margin-left: 10%;
+    margin-top: -10px;
+  }
+}
+.errorBox{
+    background-color: whitesmoke;
+    width: 350px;
+    margin: 50px 0px;
+    padding: 30px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    text-align: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0px 1px 7px -2px #acabab;
+    color: #DC3545;
+}
+.errorBox h1{
+    font-size: 25px;
+color: #DC3545;
+margin-top: 15px;
+}
+.errorBox p{
+    font-size: 15px;
+color: #222;
+}

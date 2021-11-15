@@ -1,0 +1,12 @@
+.ratingBox {
+  position: relative;
+  width: 100%;
+}
+.ratingText {
+  width: 10%;
+  float: left;
+}
+.ratingIcon {
+  width: 90%;
+  float: left;
+}

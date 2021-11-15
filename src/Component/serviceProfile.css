@@ -1,0 +1,126 @@
+.card-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 45px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card-wrapper .card {
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 3px 3px 8px 1px #ddd;
+}
+.card-wrapper .card h3 {
+  color: #555;
+  font-size: 20pt;
+}
+
+.ribbon-wrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+.card-inner h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff304d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card-inner p {
+  margin: 0px;
+  font-size: 18px;
+  color: rgb(57, 57, 57);
+  line-height: 29px;
+}
+.ribbon {
+  position: relative;
+  color: white;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #ff304d;
+  left: 11px;
+  top: 21px;
+  transform: rotate(40deg);
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon span:before,
+.ribbon span:after {
+  content: "";
+  border-top: 4px solid #f88a31;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: absolute;
+  top: 20px;
+}
+
+.ribbon span:before {
+  left: 0;
+}
+
+.ribbon span:after {
+  right: 0;
+}
+
+.number-label {
+  position: absolute;
+  top: -23px;
+  left: -24px;
+  width: 80px;
+  height: 80px;
+  padding-left: 5px;
+  line-height: 25px;
+  /* background-color: #ed1b24; */
+  /* color: white; */
+  text-align: center;
+  font-weight: bold;
+  /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.number-label img {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ff304d;
+  padding: 10px;
+}
+/* .number-label:before {
+    position: absolute;
+    content: "";
+    border-top: 10px solid #fba81a;
+    border-left: 10px solid transparent;
+    left: 0;
+    bottom: -10px;
+    transform: rotate(0deg);
+  }
+  
+  .number-label:before {
+    position: absolute;
+    content: "";
+    border-top: 10px solid #fba81a;
+    border-left: 10px solid transparent;
+    left: 0;
+    bottom: -10px;
+    transform: rotate(0deg);
+  } */
+.card-inner a {
+  text-decoration: none;
+}

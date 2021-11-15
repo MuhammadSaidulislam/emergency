@@ -1,0 +1,18 @@
+.navigation{
+  height: 58px;
+}
+.navigation .navbar {
+    background-color: #242733 !important;
+    color: aliceblue;
+    /* padding: 8px 30px; */
+    
+  }
+  
+  .navbar-light .navbar-brand {
+    color: #ff304d !important;
+    padding-left: 30px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+     color: rgba(240, 238, 238, 0.904) !important; 
+  }
+

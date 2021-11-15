@@ -1,0 +1,83 @@
+* {
+  -webkit-box-orient: vertical;
+}
+
+.socialG {
+  margin-left: 20px !important;
+}
+.centerS {
+  margin-left: 20px !important;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  background-color: whitesmoke;
+}
+
+.lable {
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #dee1ec;
+  padding: 15px;
+}
+
+.btn-submit {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #10316b;
+  color: whitesmoke;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-submit svg {
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+.loginBtn button{
+  background-color: #ff304d;
+  border: none;
+}
+.loginBtn button:hover{
+  background-color: #242733;
+  border: none;
+  color: #ff304d;
+}
+.linkSet button{
+  background-color: transparent;
+  border: none;
+  color: #222;
+}
+.linkSet button:hover{
+  background-color: #ff304d;
+  /* border: 1px solid #ff304d; */
+  color: #222;
+}
+.linkSet img {
+  margin: 2px 8px;
+}
