@@ -11,6 +11,8 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+
+ 
 }
 .profileImg {
   text-align: center;
@@ -43,6 +45,7 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  
 }
 .profileInfo h1 {
   font-size: 30px;

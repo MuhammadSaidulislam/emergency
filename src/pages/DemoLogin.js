@@ -8,6 +8,8 @@ import socialMediaAuth from "../config/auth";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
 import Taskbar from "../Component/taskbar";
 import { setToken } from "../../src/Component/token";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faEnvelope, faLocationArrow, faPassport, faPhone, faUnlock, faUnlockAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 
 const DemoLogin = (props) => {
   const [email, setEmail] = useState();
@@ -213,6 +215,9 @@ const DemoLogin = (props) => {
                     <Row className="g-2">
                       <Col md={12}>
                         <p className="lable mt-3">First Name</p>
+                        <span>
+                          <FontAwesomeIcon icon={faUserAlt} />
+                        </span>
                         <Form.Control
                           name="first_name"
                           value={firstName}
@@ -221,6 +226,9 @@ const DemoLogin = (props) => {
                           placeholder="First name"
                         ></Form.Control>
                         <p className="lable mt-3">Last Name</p>
+                        <span>
+                          <FontAwesomeIcon icon={faUserAlt} />
+                        </span>
                         <Form.Control
                           name="last_name"
                           value={lastName}
@@ -229,6 +237,9 @@ const DemoLogin = (props) => {
                           placeholder="Last Name"
                         ></Form.Control>
                         <p className="lable mt-3">Phone number</p>
+                        <span>
+                          <FontAwesomeIcon icon={faPhone} />
+                        </span>
                         <Form.Control
                           name="phone"
                           value={phone}
@@ -238,6 +249,9 @@ const DemoLogin = (props) => {
                           placeholder="Phone"
                         ></Form.Control>
                         <p className="lable mt-3">District</p>
+                        <span>
+                          <FontAwesomeIcon icon={faLocationArrow} />
+                        </span>
                         <Form.Control
                           name="district"
                           value={district}
@@ -254,6 +268,9 @@ const DemoLogin = (props) => {
                   <Row className="g-2">
                     <Col md={12}>
                       <p className="lable mt-3">E-mail</p>
+                      <span>
+                          <FontAwesomeIcon icon={faEnvelope} />
+                        </span>
                       <Form.Control
                         name="email"
                         onChange={handleEmailChange}
@@ -262,6 +279,9 @@ const DemoLogin = (props) => {
                         placeholder="Email"
                       ></Form.Control>
                       <p className="lable mt-3">Password</p>
+                      <span>
+                          <FontAwesomeIcon icon={faUnlock} />
+                        </span>
                       <Form.Control
                         onChange={handlePasswordChange}
                         name="password"
@@ -274,34 +294,28 @@ const DemoLogin = (props) => {
                 </div>
                 <div className="mt-3 text-center loginBtn">
                   <Button
-                    className="centerL"
+                    className="centerL w-100"
                     onClick={signUpMode ? signUpHandler : loginHandler}
                     type="submit"
                   >
                     Submit
                   </Button>
-                  <Button className="centerS" onClick={modeToggle}>
-                    {signUpMode ? "Login" : "Sign Up"}
+                  <Button className="mt-3 w-100 signupBtn" onClick={modeToggle}>
+                    {signUpMode ? "Already have a Account" : "Create Account"}
                   </Button>
                   <p className="text-center mt-2">{msg}</p>
                   {!isLoading && !loggedIn && (
                     <Col md={12} className="text-center mt-3 linkSet">
-                      <p>Or</p>
+                      <h1>OR</h1>
                       <Button onClick={() => handleOnClick(facebookProvider)}>
                         <img
                           src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                          width={30}
-                          height={30}
                         />
-                        Facebook
                       </Button>
                       <Button onClick={() => handleOnClick(googleProvider)}>
                         <img
                           src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                          width={30}
-                          height={30}
                         />
-                        Google
                       </Button>
                     </Col>
                   )}
